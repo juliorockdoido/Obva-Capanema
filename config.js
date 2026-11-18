@@ -5,8 +5,8 @@
    - painelUrl: aceita apenas lookerstudio.google.com ou app.powerbi.com
    ===================================================================== */
 var CONFIG = {
-  formLojista:    '',   // link do formulário do lojista
-  formConsumidor: '',   // link do formulário do consumidor
+  formLojista:'https://forms.gle/dKtMSk8yyMRhWGDXA',   // link do formulário do lojista
+  formConsumidor:'https://forms.gle/nxbdjKMJTvCFkUkb9',   // link do formulário do consumidor
   boletimUrl:     '',   // link do PDF do boletim (ex.: Google Drive, acesso "qualquer pessoa com o link")
   painelUrl:      '',   // link de incorporação do Looker Studio / Power BI (opcional)
   email:          '',   // e-mail de contato do projeto, ex.: 'obva.capanema@gmail.com'

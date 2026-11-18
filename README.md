@@ -10,9 +10,9 @@ Página estática (HTML, CSS e JavaScript simples, sem instalação) do Observat
 | `privacidade.html` | Política de privacidade (LGPD), termos de uso e direitos autorais |
 | `config.js` | **Único arquivo que você edita**: links dos formulários, boletim, painel, e-mail |
 | `style.css`, `app.js` | Visual e comportamento (não precisa mexer) |
+| `particles.js` | Efeito de partículas no fundo (para desligar, apague a linha `<script src="particles.js">` no `index.html`) |
 | `fonts/` | Fontes Inter e Space Grotesk hospedadas aqui, com suas licenças |
 | `LICENSE` | Licença do código (MIT) |
-| `LICENSE-CONTEUDO.md` | Licença dos textos, boletins e cartilhas (CC BY-NC-SA 4.0) |
 | `SECURITY.md` | Política de segurança e checklist de quem administra |
 
 ## 1. Preencha os links
@@ -40,14 +40,14 @@ Para atualizar, edite o arquivo pelo próprio GitHub (lápis) e salve.
 ## Direitos autorais: o que está resolvido e o que depende de vocês
 
 **Já resolvido na página**
-- Aviso de copyright e licença no rodapé: © 2026 OBVA-Capanema, textos e boletins sob CC BY-NC-SA 4.0, nome e logo reservados.
+- Aviso de copyright e licença no rodapé: © 2026 OBVA-Capanema, todos os direitos reservados, com pedido de citação da fonte.
 - Seção "Direitos autorais e uso do conteúdo" em `privacidade.html`: como citar, o que é permitido, marcas de UFRA e de parceiros, dados públicos.
 - Fontes (Inter e Space Grotesk, licença SIL OFL 1.1) hospedadas no próprio site, com as licenças em `fonts/`. A OFL permite uso gratuito e exige manter a licença junto.
 - Código sob licença MIT, em `LICENSE`.
 - Nenhuma imagem, logo ou texto de terceiros na página. A logo do projeto é da equipe.
 
 **Depende de vocês (confirme antes de publicar)**
-- [ ] **Titularidade e licença:** converse com o orientador e com a UFRA sobre a norma de propriedade intelectual e de projetos de extensão. A licença CC BY-NC-SA é uma sugestão; troque se a universidade preferir outra.
+- [ ] **Titularidade e licença:** converse com o orientador e com a UFRA sobre a norma de propriedade intelectual e de projetos de extensão. Sem licença aberta, o conteúdo fica com todos os direitos reservados; se a universidade preferir licenciar, atualize o rodapé e a seção 10 de `privacidade.html`.
 - [ ] **Nome e marca da UFRA:** a página cita a UFRA só em texto. Não use o brasão nem a logo sem autorização da universidade (comunicação institucional).
 - [ ] **Logos de parceiros** (Sebrae, CDL, Secretaria, etc.): só com autorização por escrito de cada um.
 - [ ] **Imagens, fotos e textos de terceiros** em boletins e cartilhas: só com licença ou autorização, sempre com crédito.

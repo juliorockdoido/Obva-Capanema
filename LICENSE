@@ -21,6 +21,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 Escopo: esta licença cobre apenas o código (index.html, style.css, app.js,
-config.js). Textos, boletins, cartilhas e gráficos do projeto seguem
-LICENSE-CONTEUDO.md. O nome e o logo "OBVA-Capanema" são reservados. As fontes
+config.js). Textos, boletins, cartilhas e gráficos do projeto não são cobertos
+por esta licença: todos os direitos reservados. O nome e o logo "OBVA-Capanema" são reservados. As fontes
 Inter e Space Grotesk seguem a SIL Open Font License 1.1 (pasta fonts/).

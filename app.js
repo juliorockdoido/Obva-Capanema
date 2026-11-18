@@ -61,10 +61,26 @@
     document.querySelectorAll('.reveal').forEach(function(r){ r.classList.add('in'); });
     grow(); return;
   }
+  // contagem animada dos números (o texto original continua no HTML se o JS falhar)
+  var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function count(el){
+    var txt = el.textContent, m = txt.match(/^(\d+)(.*)$/);
+    if(!m || calm){ return; }
+    var to = parseInt(m[1], 10), suf = m[2], dur = 1400, t0 = null;
+    el.textContent = '0' + suf;
+    function step(t){
+      if(t0 === null) t0 = t;
+      var k = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = Math.round(to * e) + suf;
+      if(k < 1) requestAnimationFrame(step); else el.textContent = txt;
+    }
+    requestAnimationFrame(step);
+  }
   var io = new IntersectionObserver(function(es){
     es.forEach(function(en){
       if(en.isIntersecting){
         en.target.classList.add('in');
+        en.target.querySelectorAll('.stat .n, .bar b').forEach(count);
         if(en.target.querySelector('.fill')) grow();
         io.unobserve(en.target);
       }

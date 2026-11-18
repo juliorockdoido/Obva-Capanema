@@ -42,6 +42,7 @@
   var fe = document.getElementById('f-email'), fi = document.getElementById('f-insta');
   var em = safeEmail(C.email), ig = safeUrl(C.instagram);
   if(em){ fe.href = 'mailto:' + em; fe.textContent = em; fe.hidden = false; } else if(fe.nextElementSibling){ fe.nextElementSibling.remove(); }
+  document.getElementById('f-contact').hidden = !(em || ig);
   if(ig){ fi.href = ig; fi.target = '_blank'; fi.rel = 'noopener noreferrer'; fi.hidden = false; }
 
   // rolagem suave (e foco para teclado/leitor de tela)

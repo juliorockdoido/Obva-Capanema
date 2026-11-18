@@ -135,7 +135,21 @@ h2{font-size:clamp(30px,4vw,44px)}
 
 /* FOOTER */
 footer{padding:44px 0 56px;border-top:1px solid var(--line);font-size:14.5px;color:var(--muted)}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer .foot{display:flex;flex-direction:column;gap:18px}
+.f-brand{line-height:1.6}
+.f-links{display:flex;flex-direction:column;gap:6px;font-size:14px}
+.f-links a{color:var(--muted)}
+.f-links a:hover{color:var(--ink)}
+.f-copy{margin:0;font-size:13.5px;line-height:1.6}
+.f-contact[hidden]{display:none}
+@media (min-width:900px){
+  footer{padding:56px 0 44px}
+  footer .foot{flex-direction:row;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:28px 64px}
+  .f-brand{flex:1 1 320px}
+  .f-links{flex:0 0 auto;align-items:flex-start}
+  .f-contact{flex:0 0 auto}
+  .f-copy{flex:0 0 100%;padding-top:22px;border-top:1px solid var(--line)}
+}
 footer a{color:var(--ink)}
 
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; frame-src https://lookerstudio.google.com https://app.powerbi.com; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OBVA-Capanema | Observatório do Comércio Varejista</title>
+<meta name="description" content="Projeto de pesquisa e extensão da UFRA, campus Capanema, que coleta dados sobre o varejo local e os devolve gratuitamente à comunidade.">
+<meta property="og:title" content="OBVA-Capanema | Observatório do Comércio Varejista">
+<meta property="og:description" content="Dados do comércio de Capanema, de volta para a cidade.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='28' fill='%231F4E3D'/%3E%3Cpath d='M20 26H40V38A10 10 0 0 1 20 38Z' fill='%23E0A526'/%3E%3Cpath d='M40 26H60V38A10 10 0 0 1 40 38Z' fill='%23F6F3EC'/%3E%3Cpath d='M60 26H80V38A10 10 0 0 1 60 38Z' fill='%23E0A526'/%3E%3Cpath d='M80 26H100V38A10 10 0 0 1 80 38Z' fill='%23F6F3EC'/%3E%3Crect x='30' y='80' width='16' height='18' rx='3' fill='%23F6F3EC'/%3E%3Crect x='52' y='68' width='16' height='30' rx='3' fill='%23F6F3EC'/%3E%3Crect x='74' y='58' width='16' height='40' rx='3' fill='%23F6F3EC'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#topo" data-go="topo" aria-label="OBVA-Capanema, início">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="28" fill="#1F4E3D"/><path d="M20 26H40V38A10 10 0 0 1 20 38Z" fill="#E0A526"/><path d="M40 26H60V38A10 10 0 0 1 40 38Z" fill="#F6F3EC"/><path d="M60 26H80V38A10 10 0 0 1 60 38Z" fill="#E0A526"/><path d="M80 26H100V38A10 10 0 0 1 80 38Z" fill="#F6F3EC"/><rect x="30" y="80" width="16" height="18" rx="3" fill="#F6F3EC"/><rect x="52" y="68" width="16" height="30" rx="3" fill="#F6F3EC"/><rect x="74" y="58" width="16" height="40" rx="3" fill="#F6F3EC"/></svg>
+      <span>OBVA-Capanema<small>Observatório do Varejo</small></span>
+    </a>
+    <nav class="links" aria-label="Principal">
+      <a class="hide-m" href="#dados" data-go="dados">Dados</a>
+      <a class="hide-m" href="#publicacoes" data-go="publicacoes">Publicações</a>
+      <a class="hide-m" href="#sobre" data-go="sobre">Sobre</a>
+      <a class="btn btn-primary btn-sm" href="#participe" data-go="participe">Participe</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow"><i></i>Projeto de pesquisa e extensão · UFRA Capanema</div>
+        <h1>Os dados do comércio de Capanema, <em>de volta para a cidade.</em></h1>
+        <p class="lead">Ouvimos lojistas e consumidores, analisamos o varejo local e devolvemos tudo de graça, em boletins, cartilhas e em um painel aberto para quem decide e para quem compra.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#participe" data-go="participe">Quero participar da pesquisa</a>
+          <a class="btn btn-ghost" href="#dados" data-go="dados">Ver primeiros resultados</a>
+        </div>
+      </div>
+      <aside class="card peek reveal" aria-label="Amostra de resultado">
+        <h3>O que pesa na escolha da loja</h3>
+        <p class="sub">Primeira etapa · consumidores · materiais de construção, armarinho e utensílios</p>
+        <div class="bar"><span>Preço</span><span class="track"><span class="fill" data-w="87"></span></span><b>87%</b></div>
+        <div class="bar"><span>Variedade</span><span class="track"><span class="fill" data-w="30"></span></span><b>30%</b></div>
+        <div class="bar"><span>Confiança</span><span class="track"><span class="fill" data-w="26"></span></span><b>26%</b></div>
+        <div class="bar"><span>Entrega</span><span class="track"><span class="fill" data-w="22"></span></span><b>22%</b></div>
+        <p class="note">Resultado preliminar de 23 respostas (24 a 27/10/2026). Indicativo, sem representar toda a população.</p>
+      </aside>
+    </div>
+  </div>
+
+  <!-- DADOS -->
+  <section id="dados" class="alt">
+    <div class="wrap">
+      <div class="kicker">Primeiros resultados</div>
+      <h2>O que já aprendemos</h2>
+      <p class="sect-lead">Quatro números da primeira rodada com consumidores. A pesquisa continua, e esses valores vão se atualizar conforme mais pessoas responderem.</p>
+      <div class="stats">
+        <div class="card stat reveal"><div class="n">83%</div><p>compram materiais nas lojas de Capanema</p></div>
+        <div class="card stat reveal"><div class="n">87%</div><p>dizem que o preço é o que mais pesa na escolha da loja</p></div>
+        <div class="card stat reveal"><div class="n">57%</div><p>já deixaram de comprar ou adiaram por falta de parcelamento ou crédito</p></div>
+        <div class="card stat reveal"><div class="n">65%</div><p>sentiram os preços subirem nos últimos 6 meses</p></div>
+      </div>
+      <p class="fine">Base: 23 consumidores. 91% têm de 18 a 24 anos; por isso os números são indicativos e serão ampliados nas próximas etapas.</p>
+      <div class="embed card reveal" id="painel" hidden><iframe data-cfg-src="painelUrl" title="Painel de dados do OBVA-Capanema" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </section>
+
+  <!-- PARTICIPE -->
+  <section id="participe">
+    <div class="wrap">
+      <div class="kicker">Participe</div>
+      <h2>Responda em poucos minutos</h2>
+      <p class="sect-lead">As respostas são anônimas e voluntárias. Quanto mais gente participa, mais fiel é o retrato do comércio da cidade.</p>
+      <noscript><p class="fine">Ative o JavaScript do navegador para ver os links dos formulários.</p></noscript>
+      <div class="duo">
+        <article class="card pcard feature reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12v8h14v-8"/><path d="M10 20v-5h4v5"/></svg></div>
+          <h3>Sou lojista</h3>
+          <p>Conte como são suas vendas, o crédito que você oferece e as épocas fortes. Em troca, você recebe os resultados do seu segmento e a Cartilha do Lojista.</p>
+          <div class="meta"><span>⏱ cerca de 6 minutos</span><span>🔒 anônimo</span></div>
+          <a class="btn btn-amber" data-cfg="formLojista" data-soon="Formulário em breve">Responder como lojista →</a>
+        </article>
+        <article class="card pcard reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></div>
+          <h3>Sou consumidor</h3>
+          <p>Diga onde e como você compra, o que pesa na sua escolha e o que as lojas poderiam melhorar. Moradores e visitantes de outras cidades podem participar.</p>
+          <div class="meta"><span>⏱ cerca de 4 minutos</span><span>🔒 anônimo</span></div>
+          <a class="btn btn-primary" data-cfg="formConsumidor" data-soon="Formulário em breve">Responder como consumidor →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="alt">
+    <div class="wrap">
+      <div class="kicker">Como funciona</div>
+      <h2>Do balcão ao boletim</h2>
+      <p class="sect-lead">Um ciclo simples, que se repete a cada etapa do projeto.</p>
+      <div class="steps">
+        <div class="card step reveal"><h3>Ouvimos</h3><p>Questionários com lojistas e consumidores, aplicados na cidade e online.</p></div>
+        <div class="card step reveal"><h3>Analisamos</h3><p>Cruzamos as respostas com dados públicos, como CAGED, IBGE e Receita Federal.</p></div>
+        <div class="card step reveal"><h3>Publicamos</h3><p>Boletins e painéis de dados com linguagem clara e os limites da amostra à vista.</p></div>
+        <div class="card step reveal"><h3>Devolvemos</h3><p>Cartilhas gratuitas e um workshop aberto à comunidade, previsto para fevereiro de 2027.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICAÇÕES -->
+  <section id="publicacoes">
+    <div class="wrap">
+      <div class="kicker">Publicações</div>
+      <h2>Materiais gratuitos</h2>
+      <p class="sect-lead">Tudo o que o projeto produz fica reunido aqui.</p>
+      <div class="pubs">
+        <article class="card pub reveal">
+          <span class="tag">Disponível</span>
+          <h3>Boletim do Varejo nº 1</h3>
+          <p>Perfil dos consumidores, critérios de escolha da loja, crédito, parcelamento e avaliação do comércio local.</p>
+          <a class="btn btn-primary" data-cfg="boletimUrl" data-soon="Em breve">Abrir boletim</a>
+        </article>
+        <article class="card pub reveal">
+          <span class="tag soon">Em breve</span>
+          <h3>Cartilha do Lojista</h3>
+          <p>Como usar dados para decidir estoque, crédito, parcelamento e promoções nas datas fortes.</p>
+          <span class="btn disabled">Em produção</span>
+        </article>
+        <article class="card pub reveal">
+          <span class="tag soon">Em breve</span>
+          <h3>Cartilha do Consumidor</h3>
+          <p>Como comparar preços e condições de pagamento e comprar com mais segurança no comércio local.</p>
+          <span class="btn disabled">Em produção</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="alt">
+    <div class="wrap about">
+      <div class="reveal">
+        <div class="kicker">Sobre</div>
+        <h2>Feito por estudantes, para a cidade</h2>
+        <p class="mt18">O OBVA-Capanema é um projeto de pesquisa e extensão de discentes de Ciências Contábeis e de Administração da Universidade Federal Rural da Amazônia (UFRA), campus Capanema, sob a orientação do Prof. Dr. Jaime Viana de Sousa.</p>
+        <p>Nossa meta é que o pequeno e o médio comerciante decidam com dados, e não só com intuição, e que o consumidor tenha informação para comprar melhor.</p>
+        <div class="chips"><span class="chip">Extensão universitária</span><span class="chip">Varejo local</span><span class="chip">Dados abertos</span><span class="chip">Gratuito</span></div>
+      </div>
+      <div class="privacy reveal">
+        <h3>Sua privacidade em primeiro lugar</h3>
+        <ul>
+          <li>Participação voluntária; você pode desistir a qualquer momento.</li>
+          <li>Respostas anônimas e usadas apenas de forma agrupada.</li>
+          <li>Nenhum dado individual de pessoa ou de loja é divulgado.</li>
+          <li>Tratamento conforme a LGPD (Lei nº 13.709/2018).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCEIROS -->
+  <section>
+    <div class="wrap">
+      <div class="band reveal">
+        <div>
+          <h2>Sua instituição pode fazer parte</h2>
+          <p>Estamos construindo parcerias com entidades do comércio, órgãos públicos e instituições de ensino para ampliar o alcance e a credibilidade da pesquisa.</p>
+        </div>
+        <a class="btn btn-amber" data-cfg="email" data-subject="Parceria OBVA-Capanema" data-soon="Contato em breve">Falar com a equipe</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>OBVA-Capanema</strong> · Observatório do Comércio Varejista<br>
+      Projeto de pesquisa e extensão · UFRA, campus Capanema-PA<br>
+      © 2026 OBVA-Capanema. Textos, boletins e cartilhas sob licença <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>. Nome e logo reservados.
+      <div class="legal">
+        <a href="privacidade.html">Privacidade e termos de uso</a>
+        <a href="privacidade.html#direitos-autorais">Direitos autorais e uso do conteúdo</a>
+      </div>
+          </div>
+    <div><a id="f-email" hidden></a><br><a id="f-insta" hidden>Instagram</a></div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

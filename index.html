@@ -13,6 +13,7 @@
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='28' fill='%231F4E3D'/%3E%3Cpath d='M20 26H40V38A10 10 0 0 1 20 38Z' fill='%23E0A526'/%3E%3Cpath d='M40 26H60V38A10 10 0 0 1 40 38Z' fill='%23F6F3EC'/%3E%3Cpath d='M60 26H80V38A10 10 0 0 1 60 38Z' fill='%23E0A526'/%3E%3Cpath d='M80 26H100V38A10 10 0 0 1 80 38Z' fill='%23F6F3EC'/%3E%3Crect x='30' y='80' width='16' height='18' rx='3' fill='%23F6F3EC'/%3E%3Crect x='52' y='68' width='16' height='30' rx='3' fill='%23F6F3EC'/%3E%3Crect x='74' y='58' width='16' height='40' rx='3' fill='%23F6F3EC'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
+<script src="theme.js"></script>
 </head>
 <body>
 
@@ -26,6 +27,7 @@
       <a class="hide-m" href="#dados" data-go="dados">Dados</a>
       <a class="hide-m" href="#publicacoes" data-go="publicacoes">Publicações</a>
       <a class="hide-m" href="#sobre" data-go="sobre">Sobre</a>
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Mudar para o tema escuro" aria-pressed="false" data-mode="light"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
       <a class="btn btn-primary btn-sm" href="#participe" data-go="participe">Participe</a>
     </nav>
   </div>
@@ -62,7 +64,7 @@
     <div class="wrap">
       <div class="kicker">Primeiros resultados</div>
       <h2>O que já aprendemos</h2>
-      <p class="sect-lead">Os números mais úteis da primeira rodada, para quem compra e para quem vende. A pesquisa continua, e esses valores vão se atualizar conforme mais pessoas responderem.</p>
+      <p class="sect-lead">Os números mais úteis da primeira rodada, do segmento de material de construção, armarinho e utensílios domésticos. A pesquisa continua, e esses valores vão se atualizar conforme mais pessoas responderem.</p>
       <h3 class="sub-h">O que dizem os consumidores</h3>
       <div class="stats">
         <div class="card stat reveal"><div class="n">83%</div><p>compram nas lojas físicas de Capanema</p></div>
@@ -88,22 +90,44 @@
     <div class="wrap">
       <div class="kicker">Participe</div>
       <h2>Responda em poucos minutos</h2>
-      <p class="sect-lead">As respostas são anônimas e voluntárias. Quanto mais gente participa, mais fiel é o retrato do comércio da cidade.</p>
+      <p class="sect-lead">Escolha o segmento da sua loja (se você é lojista) ou o dos lugares onde você costuma comprar (se é consumidor). São dois questionários por segmento, de 4 a 6 minutos, voluntários e anônimos. Quanto mais gente participa, mais fiel é o retrato do comércio da cidade.</p>
       <noscript><p class="fine">Ative o JavaScript do navegador para ver os links dos formulários.</p></noscript>
-      <div class="duo">
-        <article class="card pcard feature reveal">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12v8h14v-8"/><path d="M10 20v-5h4v5"/></svg></div>
-          <h3>Sou lojista</h3>
-          <p>Conte como são suas vendas, o crédito que você oferece e as épocas fortes. Em troca, você recebe os resultados do seu segmento e a Cartilha do Lojista.</p>
-          <div class="meta"><span>⏱ cerca de 6 minutos</span></div>
-          <a class="btn btn-amber" data-cfg="formLojista" data-soon="Formulário em breve">Responder como lojista →</a>
+      <div class="segs">
+        <article class="card seg reveal" data-seg="1">
+          <div class="seg-top"><span class="seg-n">Segmento 1</span><span class="seg-st">Em breve</span></div>
+          <h3>Supermercados, feiras e alimentos</h3>
+          <p>Preços de itens essenciais, cesta básica e hortifrúti, e como as pessoas compram no dia a dia.</p>
+          <div class="seg-btns">
+            <a class="btn btn-primary btn-sm" data-cfg="form1Lojista" data-soon="Lojista · em breve">Sou lojista →</a>
+            <a class="btn btn-ghost btn-sm" data-cfg="form1Consumidor" data-soon="Consumidor · em breve">Sou consumidor →</a>
+          </div>
         </article>
-        <article class="card pcard reveal">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></div>
-          <h3>Sou consumidor</h3>
-          <p>Diga onde e como você compra, o que pesa na sua escolha e o que as lojas poderiam melhorar. Moradores e visitantes de outras cidades podem participar.</p>
-          <div class="meta"><span>⏱ cerca de 4 minutos</span></div>
-          <a class="btn btn-primary" data-cfg="formConsumidor" data-soon="Formulário em breve">Responder como consumidor →</a>
+        <article class="card seg reveal" data-seg="2">
+          <div class="seg-top"><span class="seg-n">Segmento 2</span><span class="seg-st">Em breve</span></div>
+          <h3>Vestuário, calçados e confecções</h3>
+          <p>Datas comemorativas, ticket médio e a concorrência do comércio informal e online.</p>
+          <div class="seg-btns">
+            <a class="btn btn-primary btn-sm" data-cfg="form2Lojista" data-soon="Lojista · em breve">Sou lojista →</a>
+            <a class="btn btn-ghost btn-sm" data-cfg="form2Consumidor" data-soon="Consumidor · em breve">Sou consumidor →</a>
+          </div>
+        </article>
+        <article class="card seg reveal" data-seg="3">
+          <div class="seg-top"><span class="seg-n">Segmento 3</span><span class="seg-st">Em breve</span></div>
+          <h3>Farmácias, saúde e cosméticos</h3>
+          <p>Compra por recorrência, fidelidade e comparação entre redes e farmácias locais.</p>
+          <div class="seg-btns">
+            <a class="btn btn-primary btn-sm" data-cfg="form3Lojista" data-soon="Lojista · em breve">Sou lojista →</a>
+            <a class="btn btn-ghost btn-sm" data-cfg="form3Consumidor" data-soon="Consumidor · em breve">Sou consumidor →</a>
+          </div>
+        </article>
+        <article class="card seg reveal" data-seg="4">
+          <div class="seg-top"><span class="seg-n">Segmento 4</span><span class="seg-st">Em breve</span></div>
+          <h3>Material de construção, armarinho e utensílios</h3>
+          <p>Compras de médio e longo prazo, crédito e parcelamento, e reformas residenciais e comerciais.</p>
+          <div class="seg-btns">
+            <a class="btn btn-primary btn-sm" data-cfg="form4Lojista" data-soon="Lojista · em breve">Sou lojista →</a>
+            <a class="btn btn-ghost btn-sm" data-cfg="form4Consumidor" data-soon="Consumidor · em breve">Sou consumidor →</a>
+          </div>
         </article>
       </div>
     </div>

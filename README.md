@@ -10,6 +10,7 @@ Página estática (HTML, CSS e JavaScript simples, sem instalação) do Observat
 | `privacidade.html` | Política de privacidade (LGPD), termos de uso e direitos autorais |
 | `config.js` | **Único arquivo que você edita**: links dos formulários, boletim, painel, e-mail |
 | `style.css`, `app.js` | Visual e comportamento (não precisa mexer) |
+| `theme.js` | Botão de tema claro/escuro (lembra a escolha do visitante) |
 | `particles.js` | Efeito de partículas no fundo (para desligar, apague a linha `<script src="particles.js">` no `index.html`) |
 | `fonts/` | Fontes Inter e Space Grotesk hospedadas aqui, com suas licenças |
 | `LICENSE` | Licença do código (MIT) |
@@ -17,7 +18,7 @@ Página estática (HTML, CSS e JavaScript simples, sem instalação) do Observat
 
 ## 1. Preencha os links
 
-Abra o `config.js` e preencha os campos. Campo vazio = o botão aparece como "Em breve". Os links precisam começar com `https://`. Use o link de **responder** dos formulários (termina em `/viewform`).
+Abra o `config.js` e preencha os campos. Há um par de formulários (lojista e consumidor) para cada um dos 4 segmentos; quando uma equipe tiver os links, cole nos campos `form1…`, `form2…` e `form3…` (o segmento 4 já está preenchido). O selo do segmento muda sozinho de "Em breve" para "Respostas abertas". Campo vazio = o botão aparece como "Em breve". Os links precisam começar com `https://`. Use o link de **responder** dos formulários (termina em `/viewform`).
 
 ## 2. Preencha os marcadores em `privacidade.html`
 

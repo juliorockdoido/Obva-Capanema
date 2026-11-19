@@ -28,6 +28,13 @@
     }
   });
 
+  // selo de cada segmento: "Respostas abertas" se algum formulário tem link
+  document.querySelectorAll('.seg').forEach(function(seg){
+    if(seg.querySelector('a[data-cfg]:not(.disabled)')){
+      var st = seg.querySelector('.seg-st'); st.textContent = 'Respostas abertas'; st.classList.add('on');
+    }
+  });
+
   // painel incorporado (opcional)
   var painel = safeUrl(C.painelUrl, ['lookerstudio.google.com', 'app.powerbi.com']);
   var frame = document.querySelector('[data-cfg-src]');

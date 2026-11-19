@@ -88,6 +88,7 @@
   document.addEventListener('visibilitychange', function () { document.hidden ? stop() : start(); });
   var dm = window.matchMedia('(prefers-color-scheme: dark)');
   if (dm.addEventListener) dm.addEventListener('change', readColors);
+  if (window.MutationObserver) new MutationObserver(readColors).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
   mq.addEventListener && mq.addEventListener('change', function () {
     if (mq.matches) { stop(); cv.remove(); }
   });

@@ -10,6 +10,7 @@ Página estática (HTML, CSS e JavaScript simples, sem instalação) do Observat
 | `privacidade.html` | Política de privacidade (LGPD), termos de uso e direitos autorais |
 | `config.js` | **Único arquivo que você edita**: links dos formulários, boletim, painel, e-mail |
 | `style.css`, `app.js` | Visual e comportamento (não precisa mexer) |
+| `painel.html`, `painel.js` | Painel de dados (consumidores e lojistas). Os números ficam no começo do `painel.js`, no objeto `D` |
 | `theme.js` | Botão de tema claro/escuro (lembra a escolha do visitante) |
 | `particles.js` | Efeito de partículas no fundo (para desligar, apague a linha `<script src="particles.js">` no `index.html`) |
 | `fonts/` | Fontes Inter e Space Grotesk hospedadas aqui, com suas licenças |
